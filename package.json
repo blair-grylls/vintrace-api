@@ -9,6 +9,7 @@
   "author": "Blair Christensen",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "glob": "^7.1.6",
