@@ -1,12 +1,14 @@
-# Vintrace coding test Exercise 1 submission by Blair Christensen
+# Vintrace Exercise 1 submission
+##### Blair Christensen
 
 These simple REST APIs return some JSON data that describes a breakdown of the TOTAL percentage of year, variety, region and year + variety information for a specific wine, ordered from highest percentage to lowest.  
 
 ## Getting started
 
-Clone the git repository and navigate to the folder.
+Clone the git repository and navigate to the folder then run:
 
 ```
+npm install
 npm run start
 ```
 
@@ -19,19 +21,23 @@ http://localhost:1995/api/breakdown/year/{lotCode}
 ```
 
 ### Breakdown by variety
+
 ```
 http://localhost:1995/api/breakdown/variety/{lotCode}
-
 ```
 
 ### Breakdown by region
-http://localhost:1995/api/breakdown/region/{lotCode}
 
+```
+http://localhost:1995/api/breakdown/region/{lotCode}
+```
 
 ### Breakdown by any combination
 The design speicified to give a breakdown by year + variety, however to make the solution more scalable in case we add more attributes in the future, this solution can search by any combination.
 
+```
 http://localhost:1995/api/breakdown/year-variety/{lotCode}
+```
 
 ### Example output
 
